@@ -32,21 +32,22 @@ import {
   BarChart3,
   Shield,
   Heart,
-  Star
+  Star,
+  Package
 } from 'lucide-react'
 
-// 10 analytics cards for 2 rows of 5 each
+// 10 analytics cards linked to GameLayer gamification mechanics
 const stats = [
   { title: 'Total Players', value: '1,247', subtitle: 'Active users', change: '+12%', icon: Users, color: 'text-blue-600' },
   { title: 'Active Missions', value: '24', subtitle: 'Running campaigns', change: '+5%', icon: Target, color: 'text-green-600' },
   { title: 'Points Awarded', value: '2.4M', subtitle: 'This month', change: '+18%', icon: Trophy, color: 'text-yellow-600' },
   { title: 'Engagement Rate', value: '87%', subtitle: 'Average', change: '+3%', icon: Activity, color: 'text-purple-600' },
   { title: 'Revenue', value: '€12.5K', subtitle: 'This month', change: '+8%', icon: DollarSign, color: 'text-green-600' },
-  { title: 'Conversion Rate', value: '23%', subtitle: 'Goal completion', change: '+7%', icon: TrendingUp, color: 'text-indigo-600' },
-  { title: 'Retention Rate', value: '78%', subtitle: 'Monthly', change: '+4%', icon: Heart, color: 'text-red-600' },
-  { title: 'Avg Session', value: '4.2m', subtitle: 'Duration', change: '+2%', icon: Clock, color: 'text-orange-600' },
-  { title: 'Achievements', value: '156', subtitle: 'Unlocked', change: '+15%', icon: Medal, color: 'text-pink-600' },
-  { title: 'Team Score', value: '8.9', subtitle: 'Average rating', change: '+1%', icon: Star, color: 'text-amber-600' }
+  { title: 'Active Streaks', value: '342', subtitle: 'Consecutive days', change: '+15%', icon: Zap, color: 'text-orange-600' },
+  { title: 'Achievements', value: '156', subtitle: 'Unlocked this week', change: '+22%', icon: Medal, color: 'text-pink-600' },
+  { title: 'Leaderboard', value: '89', subtitle: 'Active competitions', change: '+7%', icon: BarChart3, color: 'text-indigo-600' },
+  { title: 'Mystery Wins', value: '127', subtitle: 'Surprise rewards', change: '+31%', icon: Gift, color: 'text-red-600' },
+  { title: 'Prize Redemptions', value: '89', subtitle: 'This month', change: '+14%', icon: Package, color: 'text-amber-600' }
 ]
 
 const tabs = [
