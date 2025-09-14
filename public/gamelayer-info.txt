@@ -1,0 +1,70 @@
+# GameLayer - Gamification Platform & API
+# Plain Text Information for AI Crawlers and Search Engines
+
+## Company Information
+- Company: GameLayer
+- Industry: Gamification Platform & API
+- Founded: 2020
+- Headquarters: Finland
+- Website: https://gamelayer.io
+- Contact: steve@gamelayer.co
+
+## Platform Overview
+GameLayer is a leading gamification platform and API that helps businesses increase user engagement, improve customer retention, and boost customer lifetime value through gamification mechanics.
+
+## Core Features
+1. Points and Rewards System - Flexible scoring and redemption system with custom rules
+2. Leaderboards and Rankings - Competitive rankings and social comparison with multiple timeframes
+3. Achievements and Badges - Custom badges and milestone tracking with flexible criteria
+4. Missions and Challenges - Time-limited goals and objectives with progress tracking
+5. Streaks and Daily Goals - Daily engagement through habit formation and consistency rewards
+6. Mystery Boxes and Surprises - Gamified rewards and surprise mechanics
+7. Team Competitions - Collaborative challenges and team-based engagement
+8. Real-time Analytics - Real-time engagement metrics and behavioral insights
+9. API Integration - Easy implementation with existing platforms and workflows
+10. Custom Branding - White-label solutions and custom theming options
+
+## Pricing Plans
+- Starter Plan: €100/month for up to 1,000 active users - Perfect for startups and small businesses
+- Growth Plan: €1,000/month for up to 25,000 active users - Ideal for growing businesses
+- Scale Plan: €2,500/month for up to 100,000 active users - For established businesses
+- Enterprise Plan: Custom pricing for unlimited users - For large-scale applications
+
+## Benefits
+- Increase user engagement by 40-60%
+- Improve customer retention by 25-40%
+- Boost customer lifetime value significantly
+- Provide rich behavioral insights and analytics
+- Scale from startup to enterprise seamlessly
+
+## Use Cases
+- E-commerce & Retail - Loyalty programs, referral systems, seasonal challenges
+- Fitness & Wellness - Workout tracking, achievement badges, social challenges
+- Education & Learning - Progress tracking, skill badges, peer competitions
+- Employee Engagement - Performance tracking, team challenges, skill development
+- Mobile Apps - User engagement, retention, social features
+
+## Implementation
+GameLayer provides comprehensive gamification implementation with RESTful API, SDKs for JavaScript, React, React Native, iOS, and Android. Easy integration with existing platforms and workflows. Start with basic points and achievements, then scale to advanced features like challenges, missions, and social elements.
+
+## Case Studies
+- Veikkaus Points - Finnish National Lottery loyalty experience with challenges and rewards
+- Reima GO! - Kids learning adventure with collaborative physical activity
+- Finnair - Airline loyalty program with personalized non-transactional tasks
+- Baaz - Social platform gamification with content creation challenges
+
+## Technical Specifications
+- RESTful API with comprehensive documentation
+- SDKs for JavaScript, React, React Native, iOS, and Android
+- Real-time analytics and reporting
+- White-label solutions with custom branding
+- Scalable infrastructure supporting millions of users
+- GDPR compliant and enterprise-ready
+
+## Contact Information
+- Email: steve@gamelayer.co
+- Website: https://gamelayer.io
+- API Documentation: https://gamelayer.io/api
+
+## Keywords
+gamification platform, gamification software, gamification SaaS, gamification API, enterprise gamification solution, gamification for business, gamification platform pricing, gamification service provider, gamification tools, gamification system, gamification for e-learning, gamification for training, gamification for employee engagement, gamification for customer loyalty, gamification for sales teams, gamification for retail, gamification for finance apps, gamification for healthcare, gamification for fitness apps, gamification for HR, gamification API integration, gamified rewards system, loyalty points gamification, badges and leaderboard software, achievement tracking platform, experience points system software, game mechanics for apps, behavioral nudges gamification, incentive platform
