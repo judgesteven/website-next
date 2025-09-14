@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Lock, User, Eye, EyeOff, Shield, AlertCircle } from 'lucide-react'
-import { Dashboard } from './Dashboard'
+import Dashboard from './Dashboard'
 
 export function DashboardLogin() {
   const [credentials, setCredentials] = useState({
