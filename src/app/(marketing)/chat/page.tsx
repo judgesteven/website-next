@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { ChatPage } from '@/components/ChatPage'
+import { Testing } from '@/components/Testing'
 
 export const metadata: Metadata = {
   title: 'GameLayer Chat - AI-Powered Gamification Assistant',
@@ -11,5 +11,5 @@ export const metadata: Metadata = {
 }
 
 export default function ChatAssistantPage() {
-  return <ChatPage />
+  return <Testing />
 }
