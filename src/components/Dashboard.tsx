@@ -38,7 +38,10 @@ import {
   Calendar,
   RefreshCw,
   Users2,
-  Image as ImageIcon
+  Image as ImageIcon,
+  Plus,
+  Save,
+  SquarePen
 } from 'lucide-react'
 
 // Sample data from the original Dashboard - now with 10 cards for 2 rows of 5
@@ -77,6 +80,8 @@ const topUsers = [
 export function Dashboard() {
   const [activeTab, setActiveTab] = useState('players')
   const [editingPlayerId, setEditingPlayerId] = useState<number | null>(null)
+  const [showAddPlayerModal, setShowAddPlayerModal] = useState(false)
+  const [newPlayer, setNewPlayer] = useState({ name: '', email: '', level: 1, points: 0, credits: 0 })
 
   const handleStartEditPlayer = (user: any) => {
     setEditingPlayerId(user.id)
@@ -84,6 +89,31 @@ export function Dashboard() {
 
   const handleCancelEditPlayer = () => {
     setEditingPlayerId(null)
+  }
+
+  const handleAddPlayer = () => {
+    if (newPlayer.name && newPlayer.email) {
+      const newId = Math.max(...users.map(u => u.id)) + 1
+      const playerToAdd = {
+        id: newId,
+        name: newPlayer.name,
+        description: 'New member',
+        level: newPlayer.level,
+        points: newPlayer.points,
+        credits: newPlayer.credits,
+        image: `https://picsum.photos/400/300?random=${newId}`
+      }
+      users.push(playerToAdd)
+      setNewPlayer({ name: '', email: '', level: 1, points: 0, credits: 0 })
+      setShowAddPlayerModal(false)
+    }
+  }
+
+  const handleDeletePlayer = (userId: number) => {
+    const index = users.findIndex(u => u.id === userId)
+    if (index > -1) {
+      users.splice(index, 1)
+    }
   }
 
   return (
@@ -199,7 +229,10 @@ export function Dashboard() {
                       Filter
                     </button>
                   </div>
-                  <button className="px-4 py-3 bg-blue-600 text-white rounded-3xl hover:bg-blue-700 transition-colors text-sm font-medium">
+                  <button 
+                    onClick={() => setShowAddPlayerModal(true)}
+                    className="px-4 py-3 bg-blue-600 text-white rounded-3xl hover:bg-blue-700 transition-colors text-sm font-medium"
+                  >
                     Add Player
                   </button>
                 </div>
@@ -293,7 +326,7 @@ export function Dashboard() {
                                 className="text-gray-600 hover:text-red-600"
                                 onClick={(e) => {
                                   e.stopPropagation();
-                                  // Handle delete
+                                  handleDeletePlayer(user.id);
                                 }}
                               >
                                 <Trash2 className="w-4 h-4" />
@@ -389,6 +422,97 @@ export function Dashboard() {
           </div>
         </div>
       </div>
+
+      {/* Add Player Modal */}
+      {showAddPlayerModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-6 w-full max-w-md">
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-lg font-semibold">Add New Player</h3>
+              <button 
+                onClick={() => setShowAddPlayerModal(false)}
+                className="text-gray-400 hover:text-gray-600"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            
+            <div className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                <input
+                  type="text"
+                  value={newPlayer.name}
+                  onChange={(e) => setNewPlayer({...newPlayer, name: e.target.value})}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="Enter player name"
+                />
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input
+                  type="email"
+                  value={newPlayer.email}
+                  onChange={(e) => setNewPlayer({...newPlayer, email: e.target.value})}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="Enter email address"
+                />
+              </div>
+              
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Level</label>
+                  <input
+                    type="number"
+                    value={newPlayer.level}
+                    onChange={(e) => setNewPlayer({...newPlayer, level: parseInt(e.target.value)})}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    min="1"
+                  />
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Points</label>
+                  <input
+                    type="number"
+                    value={newPlayer.points}
+                    onChange={(e) => setNewPlayer({...newPlayer, points: parseInt(e.target.value)})}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    min="0"
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Credits</label>
+                <input
+                  type="number"
+                  value={newPlayer.credits}
+                  onChange={(e) => setNewPlayer({...newPlayer, credits: parseInt(e.target.value)})}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  min="0"
+                />
+              </div>
+            </div>
+            
+            <div className="flex justify-end space-x-3 mt-6">
+              <button
+                onClick={() => setShowAddPlayerModal(false)}
+                className="px-4 py-2 text-gray-600 hover:text-gray-800 transition-colors"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleAddPlayer}
+                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+              >
+                Add Player
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
