@@ -7,7 +7,7 @@ export default function StructuredData() {
         '@id': 'https://gamelayer.io/#website',
         'url': 'https://gamelayer.io',
         'name': 'GameLayer',
-        'description': 'Leading Gamification Platform & API for Business',
+        'description': 'Leading AI-Ready Gamification Platform & API for Business with Open API, Developer-First Approach, and Structured Machine-Readable Data',
         'publisher': {
           '@id': 'https://gamelayer.io/#organization'
         },
@@ -55,6 +55,16 @@ export default function StructuredData() {
         'name': 'GameLayer',
         'applicationCategory': 'BusinessApplication',
         'operatingSystem': 'All',
+        'description': 'AI-ready gamification platform with open API, developer-first approach, structured and machine-readable data, and composable architecture',
+        'featureList': [
+          'Open API with comprehensive documentation',
+          'Developer-first approach with extensive SDKs',
+          'Structured and machine-readable data formats',
+          'Composable architecture for flexible integration',
+          'AI-ready data structures and endpoints',
+          'Real-time gamification mechanics',
+          'Enterprise-grade security and compliance'
+        ],
         'offers': {
           '@type': 'Offer',
           'price': '100',
@@ -91,6 +101,14 @@ export default function StructuredData() {
             'acceptedAnswer': {
               '@type': 'Answer',
               'text': 'Any business looking to increase user engagement, customer retention, or employee motivation can benefit from gamification. This includes SaaS companies, e-learning platforms, mobile apps, retail businesses, healthcare organizations, fitness apps, HR departments, and marketing teams. GameLayer works across all industries and use cases.'
+            }
+          },
+          {
+            '@type': 'Question',
+            'name': 'Is GameLayer AI-ready and developer-friendly?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Yes, GameLayer is built with AI-ready architecture featuring open API access, developer-first approach, structured and machine-readable data formats, and composable components. Our platform provides comprehensive documentation, SDKs, and data structures optimized for AI integration and automated workflows.'
             }
           }
         ]

@@ -2,29 +2,31 @@
 
 import { useState, useEffect } from 'react'
 import { HeroSection } from './sections/HeroSection'
-import { AIChatSection } from './sections/AIChatSection'
+// import { AIChatSection } from './sections/AIChatSection' // Kept for future use
 import { FeaturesSection } from './sections/FeaturesSection'
 import { FAQSection } from './sections/FAQSection'
 import { AccessSection } from './sections/AccessSection'
-import { sendMessage } from '@/lib/api'
-import type { Message, AccessForm } from '@/types/chat'
+// import { sendMessage } from '@/lib/api' // Kept for future use
+// import type { Message, AccessForm } from '@/types/chat' // Kept for future use
+import type { AccessForm } from '@/types/chat'
 
 export function Testing() {
-  const [inputMessage, setInputMessage] = useState('')
-  const [messages, setMessages] = useState<Message[]>([
-    { 
-      id: 1, 
-      text: "Hi! I'm your Gamification Assistant, here to provide expert guidance on gamification, implementation strategies, and best practices for user engagement. What would you like to know about gamification?", 
-      sender: 'ai',
-      timestamp: new Date('2024-01-01T10:00:00Z') // Static timestamp to avoid hydration issues
-    }
-  ])
-  const [isClient, setIsClient] = useState(false)
+  // AI Chat state - commented out for future use
+  // const [inputMessage, setInputMessage] = useState('')
+  // const [messages, setMessages] = useState<Message[]>([
+  //   { 
+  //     id: 1, 
+  //     text: "Hi! I'm your Gamification Assistant, here to provide expert guidance on gamification, implementation strategies, and best practices for user engagement. What would you like to know about gamification?", 
+  //     sender: 'ai',
+  //     timestamp: new Date('2024-01-01T10:00:00Z') // Static timestamp to avoid hydration issues
+  //   }
+  // ])
+  // const [isClient, setIsClient] = useState(false)
+  // const [isLoading, setIsLoading] = useState(false)
 
-  useEffect(() => {
-    setIsClient(true)
-  }, [])
-  const [isLoading, setIsLoading] = useState(false)
+  // useEffect(() => {
+  //   setIsClient(true)
+  // }, [])
   const [accessForm, setAccessForm] = useState<AccessForm>({
     name: '',
     email: '',
@@ -33,54 +35,55 @@ export function Testing() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitSuccess, setSubmitSuccess] = useState(false)
 
-  const handleSendMessage = async () => {
-    if (!inputMessage.trim() || isLoading) return
+  // AI Chat handlers - commented out for future use
+  // const handleSendMessage = async () => {
+  //   if (!inputMessage.trim() || isLoading) return
 
-    const userMessage: Message = {
-      id: Date.now(),
-      text: inputMessage,
-      sender: 'user',
-      timestamp: new Date()
-    }
+  //   const userMessage: Message = {
+  //     id: Date.now(),
+  //     text: inputMessage,
+  //     sender: 'user',
+  //     timestamp: new Date()
+  //   }
 
-    setMessages(prev => [...prev, userMessage])
-    setInputMessage('')
-    setIsLoading(true)
+  //   setMessages(prev => [...prev, userMessage])
+  //   setInputMessage('')
+  //   setIsLoading(true)
 
-    try {
-      const data = await sendMessage(inputMessage, 'testing')
+  //   try {
+  //     const data = await sendMessage(inputMessage, 'testing')
 
-      if (data.response) {
-        const aiMessage: Message = {
-          id: Date.now() + 1,
-          text: data.response,
-          sender: 'ai',
-          timestamp: new Date()
-        }
-        setMessages(prev => [...prev, aiMessage])
-      } else {
-        throw new Error('No response from AI')
-      }
-    } catch (error) {
-      console.error('Error sending message:', error)
-      const errorMessage: Message = {
-        id: Date.now() + 1,
-        text: "I'm having trouble connecting right now. Please try again in a moment!",
-        sender: 'ai',
-        timestamp: new Date()
-      }
-      setMessages(prev => [...prev, errorMessage])
-    } finally {
-      setIsLoading(false)
-    }
-  }
+  //     if (data.response) {
+  //       const aiMessage: Message = {
+  //         id: Date.now() + 1,
+  //         text: data.response,
+  //         sender: 'ai',
+  //         timestamp: new Date()
+  //       }
+  //       setMessages(prev => [...prev, aiMessage])
+  //     } else {
+  //       throw new Error('No response from AI')
+  //     }
+  //   } catch (error) {
+  //     console.error('Error sending message:', error)
+  //     const errorMessage: Message = {
+  //       id: Date.now() + 1,
+  //       text: "I'm having trouble connecting right now. Please try again in a moment!",
+  //       sender: 'ai',
+  //       timestamp: new Date()
+  //     }
+  //     setMessages(prev => [...prev, errorMessage])
+  //   } finally {
+  //     setIsLoading(false)
+  //   }
+  // }
 
-  const handleKeyPress = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault()
-      handleSendMessage()
-    }
-  }
+  // const handleKeyPress = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+  //   if (e.key === 'Enter' && !e.shiftKey) {
+  //     e.preventDefault()
+  //     handleSendMessage()
+  //   }
+  // }
 
   const handleAccessSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -154,14 +157,14 @@ export function Testing() {
   return (
     <>
       <HeroSection />
-      <AIChatSection
+      {/* <AIChatSection
         messages={messages}
         inputMessage={inputMessage}
         isLoading={isLoading}
         onInputChange={(value) => setInputMessage(value)}
         onSendMessage={handleSendMessage}
         onKeyPress={handleKeyPress}
-      />
+      /> */}
       <FeaturesSection />
       <FAQSection />
       <AccessSection

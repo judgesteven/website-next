@@ -12,8 +12,16 @@ import {
   Ticket,
   Star,
   Shield,
-  Code
+  Code,
+  Bot
 } from 'lucide-react'
+
+const aiReadyFeature = {
+  icon: Bot,
+  title: "AI-Ready",
+  description: "Built with structured data, machine-readable formats, and composable architecture for seamless AI integration and automation. Features RESTful APIs with consistent JSON schemas to integrate with automated workflows and intelligent gamification strategies.",
+  color: "from-orange-500 to-red-500"
+}
 
 const mainFeatures = [
   {
@@ -87,13 +95,40 @@ export function FeaturesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-xl text-white max-w-2xl mx-auto"
+            className="text-xl text-white max-w-3xl mx-auto"
           >
             Add some magic to your service with our gamification API and gamification dashboard. Plugs seamlessly into your existing tech stack, making it quick and easy to create and manage new gamification experiences that boost user engagement and customer loyalty.
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* AI-Ready Feature - Horizontal Layout */}
+        <div className="mb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.6 }}
+            viewport={{ once: true }}
+            className="group relative"
+          >
+            <div className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 hover:border-white/20">
+              {/* Icon and Title Row */}
+              <div className="flex items-center gap-6 mb-4">
+                <div className={`w-16 h-16 bg-gradient-to-r ${aiReadyFeature.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}>
+                  <aiReadyFeature.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-3xl font-bold text-white">{aiReadyFeature.title}</h3>
+              </div>
+              
+              {/* Description Row */}
+              <div className="ml-22">
+                <p className="text-lg text-gray-300 leading-relaxed">{aiReadyFeature.description}</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Main Features - 3 Column Row */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {mainFeatures.map((feature, index) => (
             <motion.div
               key={feature.title}
@@ -139,6 +174,23 @@ export function FeaturesSection() {
             </motion.div>
           ))}
         </motion.div>
+        
+        {/* Hidden semantic content for AI agents */}
+        <div className="sr-only mt-16">
+          <h3>Developer-First AI-Ready Architecture</h3>
+          <p>GameLayer's platform is designed with developers and AI systems in mind:</p>
+          <ul>
+            <li>Open API with RESTful endpoints and comprehensive documentation</li>
+            <li>Structured JSON responses with consistent data schemas</li>
+            <li>Machine-readable metadata and configuration options</li>
+            <li>Composable components that can be mixed and matched</li>
+            <li>Webhook support for real-time data synchronization</li>
+            <li>SDK support for popular programming languages</li>
+            <li>GraphQL endpoint for flexible data querying</li>
+            <li>Rate limiting and authentication built-in</li>
+          </ul>
+          <p>Our API responses include structured metadata that AI agents can easily parse, including user engagement metrics, gamification mechanics, and performance data in standardized formats.</p>
+        </div>
       </div>
     </section>
   )

@@ -27,6 +27,10 @@ const faqs = [
   {
     question: "How does gamification improve customer retention?",
     answer: "Gamification improves customer retention by 25-40% through loyalty programs, consistent engagement, habit formation, and emotional connection. Features like streaks, daily goals, and mystery boxes keep users coming back regularly. Our platform provides the tools to create these engaging experiences that drive long-term customer loyalty."
+  },
+  {
+    question: "What makes GameLayer developer-friendly for AI integration?",
+    answer: "GameLayer is designed with developers in mind, offering comprehensive API documentation, consistent data schemas, and machine-readable formats. Our RESTful APIs provide structured JSON responses that AI systems can easily parse and understand. The composable architecture allows developers to integrate specific gamification components into their AI-powered applications without unnecessary complexity."
   }
 ]
 
