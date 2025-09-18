@@ -29,7 +29,7 @@ export function HeroSection() {
               className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full px-6 py-3 mb-6 border border-purple-400/30 shadow-lg"
             >
               <Sparkles className="w-5 h-5 text-yellow-300" />
-              <span className="text-white font-semibold drop-shadow-sm">AI-Ready Gamification Engine</span>
+              <span className="text-white font-semibold drop-shadow-sm">#1 Gamification API</span>
             </motion.div>
 
             <motion.h1
