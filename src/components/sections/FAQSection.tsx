@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     question: "How much does GameLayer cost?",
-    answer: "GameLayer offers flexible pricing starting at €100/month for the Starter plan (up to 1,000 users), €1,000/month for Growth (up to 25,000 users), €2,500/month for Scale (up to 100,000 users), and custom Enterprise pricing for unlimited users. All plans include our full gamification platform and API access."
+    answer: "GameLayer offers flexible pricing starting at €100/month for the Starter plan (up to 1,000 users), €1,000/month for Growth (up to 25,000 users), €2,500/month for Scale (up to 100,000 users), and custom Enterprise pricing for unlimited users. All plans include our full gamification platform and API access. View our detailed pricing plans for more information."
   },
   {
     question: "What types of businesses can benefit from gamification?",
@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: "How quickly can I implement gamification with GameLayer?",
-    answer: "With GameLayer's API and pre-built components, you can implement basic gamification features in just a few hours. Our comprehensive documentation and integration guides make it easy for developers to get started quickly. Most customers see results within the first week of implementation."
+    answer: "With GameLayer's API and pre-built components, you can implement basic gamification features in just a few hours. Our comprehensive documentation and integration guides make it easy for developers to get started quickly. Most customers see results within the first week of implementation. Check out our API documentation to get started."
   },
   {
     question: "What gamification features does GameLayer offer?",
@@ -88,7 +88,19 @@ export function FAQSection() {
           className="text-center mt-12"
         >
           <p className="text-gray-300 mb-6">
-            Still have questions? Check out our API documentation or explore our project references to see gamification in action.
+            Still have questions? Check out our{' '}
+            <a href="/api" className="text-blue-400 hover:text-blue-300 underline transition-colors duration-200">
+              API documentation
+            </a>
+            {' '}or explore our{' '}
+            <a href="/references" className="text-blue-400 hover:text-blue-300 underline transition-colors duration-200">
+              project references
+            </a>
+            {' '}to see gamification in action. View our{' '}
+            <a href="/pricing" className="text-blue-400 hover:text-blue-300 underline transition-colors duration-200">
+              pricing plans
+            </a>
+            {' '}to get started.
           </p>
         </motion.div>
       </div>

@@ -27,20 +27,23 @@ const mainFeatures = [
   {
     icon: Code,
     title: "Open API",
-    description: "Comprehensive RESTful API with extensive documentation and integration tools for seamless gamification implementation",
-    color: "from-blue-500 to-cyan-500"
+    description: "Comprehensive RESTful API with extensive documentation and integration tools for seamless gamification implementation. Learn more about our API documentation and integration guides.",
+    color: "from-blue-500 to-cyan-500",
+    link: "/api"
   },
   {
     icon: BarChart3,
     title: "Content Dashboard",
-    description: "Powerful content management interface to create and manage your gamification projects, track performance metrics, and optimize your gamification strategy",
-    color: "from-green-500 to-emerald-500"
+    description: "Powerful content management interface to create and manage your gamification projects, track performance metrics, and optimize your gamification strategy. See real examples in our customer success stories.",
+    color: "from-green-500 to-emerald-500",
+    link: "/references"
   },
   {
     icon: Shield,
     title: "Rules Manager",
-    description: "Flexible rule engine to create, customize, and manage complex gamification mechanics, rewards, and user progression systems",
-    color: "from-purple-500 to-pink-500"
+    description: "Flexible rule engine to create, customize, and manage complex gamification mechanics, rewards, and user progression systems. Explore our transparent pricing plans to get started.",
+    color: "from-purple-500 to-pink-500",
+    link: "/pricing"
   }
 ]
 
@@ -142,8 +145,25 @@ export function FeaturesSection() {
                 <div className={`w-16 h-16 bg-gradient-to-r ${feature.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">{feature.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{feature.description}</p>
+               <h3 className="text-xl font-bold text-white mb-4">{feature.title}</h3>
+               <p className="text-gray-300 leading-relaxed">
+                 {feature.description.split('. ').map((sentence, index, array) => {
+                   if (index === array.length - 1 && feature.link) {
+                     return (
+                       <span key={index}>
+                         {sentence.replace(/\.$/, '')}.{' '}
+                         <a 
+                           href={feature.link} 
+                           className="text-blue-400 hover:text-blue-300 underline transition-colors duration-200"
+                         >
+                           Learn more →
+                         </a>
+                       </span>
+                     )
+                   }
+                   return sentence + (index < array.length - 1 ? '. ' : '')
+                 })}
+               </p>
               </div>
             </motion.div>
           ))}

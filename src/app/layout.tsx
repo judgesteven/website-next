@@ -50,6 +50,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <StructuredData />
+        {/* Preload critical resources */}
+        <link rel="preload" href="/gamelayer-logo.png" as="image" type="image/png" />
+        <link rel="preload" href="/GameLayer_Logo_White.png" as="image" type="image/png" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
         {/* Google Analytics */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-4T24BJP830'}`}

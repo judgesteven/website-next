@@ -21,6 +21,17 @@ export default function StructuredData() {
         'inLanguage': 'en'
       },
       {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          {
+            '@type': 'ListItem',
+            'position': 1,
+            'name': 'Home',
+            'item': 'https://gamelayer.io'
+          }
+        ]
+      },
+      {
         '@type': 'Organization',
         '@id': 'https://gamelayer.io/#organization',
         'name': 'GameLayer',
@@ -75,6 +86,45 @@ export default function StructuredData() {
           'ratingValue': '4.8',
           'ratingCount': '150'
         }
+      },
+      {
+        '@type': 'Product',
+        'name': 'GameLayer Gamification Platform',
+        'description': 'AI-ready gamification platform with open API, developer-first approach, structured and machine-readable data, and composable architecture',
+        'brand': {
+          '@type': 'Brand',
+          'name': 'GameLayer'
+        },
+        'category': 'Software',
+        'offers': [
+          {
+            '@type': 'Offer',
+            'name': 'Starter Plan',
+            'price': '100',
+            'priceCurrency': 'EUR',
+            'availability': 'https://schema.org/InStock',
+            'validFrom': '2025-01-01',
+            'description': 'Up to 1,000 users'
+          },
+          {
+            '@type': 'Offer',
+            'name': 'Growth Plan',
+            'price': '1000',
+            'priceCurrency': 'EUR',
+            'availability': 'https://schema.org/InStock',
+            'validFrom': '2025-01-01',
+            'description': 'Up to 25,000 users'
+          },
+          {
+            '@type': 'Offer',
+            'name': 'Scale Plan',
+            'price': '2500',
+            'priceCurrency': 'EUR',
+            'availability': 'https://schema.org/InStock',
+            'validFrom': '2025-01-01',
+            'description': 'Up to 100,000 users'
+          }
+        ]
       },
       {
         '@type': 'FAQPage',

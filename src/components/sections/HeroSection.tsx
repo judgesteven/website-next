@@ -54,10 +54,11 @@ export function HeroSection() {
               <span className="text-yellow-300 font-semibold">
                 simple API integration
               </span>
-              {' '}to turn users into loyal fans who keep coming back for more. Our gamification API and enterprise gamification platform help businesses increase user engagement by{' '}
+              {' '}to turn users into loyal fans who keep coming back for more. Our AI-ready gamification API and enterprise gamification platform help businesses increase user engagement by{' '}
               <span className="text-yellow-300 font-semibold">40-60%</span>
               {' '}and improve customer retention by{' '}
               <span className="text-yellow-300 font-semibold">25-40%</span>.
+              Built with structured data, machine-readable formats, and composable architecture for seamless AI integration.
             </motion.p>
 
             <motion.div
