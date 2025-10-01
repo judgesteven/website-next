@@ -50,15 +50,15 @@ export function HeroSection() {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="text-xl text-white mb-8 max-w-4xl mx-auto"
             >
-              All it takes is a{' '}
+              Turn users into loyal fans who keep coming back for more with our{' '}
               <span className="text-yellow-300 font-semibold">
-                simple API integration
+                gamification API
               </span>
-              {' '}to turn users into loyal fans who keep coming back for more. Our AI-ready gamification API, microservice, and enterprise gamification platform help businesses create loyalty gamification and digital loyalty experiences that increase user engagement by{' '}
+              . Our enterprise grade gamification microservice can help boost user engagement by{' '}
               <span className="text-yellow-300 font-semibold">40-60%</span>
-              {' '}and improve customer retention by{' '}
+              {' '}and improve customer loyalty by{' '}
               <span className="text-yellow-300 font-semibold">25-40%</span>.
-              Built with structured data, machine-readable formats, and composable architecture for seamless AI integration.
+              Integrates seamlessly with your existing tech stack with or without the help of AI.
             </motion.p>
 
             <motion.div
