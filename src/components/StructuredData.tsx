@@ -7,7 +7,7 @@ export default function StructuredData() {
         '@id': 'https://gamelayer.io/#website',
         'url': 'https://gamelayer.io',
         'name': 'GameLayer',
-        'description': 'Leading AI-Ready Gamification Platform & API for Business with Open API, Developer-First Approach, and Structured Machine-Readable Data',
+        'description': 'Leading AI-Ready Gamification Platform, API & Microservice for Business with Open API, Developer-First Approach, Loyalty Gamification, and Digital Loyalty Solutions',
         'publisher': {
           '@id': 'https://gamelayer.io/#organization'
         },
@@ -66,7 +66,7 @@ export default function StructuredData() {
         'name': 'GameLayer',
         'applicationCategory': 'BusinessApplication',
         'operatingSystem': 'All',
-        'description': 'AI-ready gamification platform with open API, developer-first approach, structured and machine-readable data, and composable architecture',
+        'description': 'AI-ready gamification platform, API, and microservice with open API, developer-first approach, loyalty gamification, digital loyalty solutions, and composable architecture',
         'featureList': [
           'Open API with comprehensive documentation',
           'Developer-first approach with extensive SDKs',
@@ -90,7 +90,7 @@ export default function StructuredData() {
       {
         '@type': 'Product',
         'name': 'GameLayer Gamification Platform',
-        'description': 'AI-ready gamification platform with open API, developer-first approach, structured and machine-readable data, and composable architecture',
+        'description': 'AI-ready gamification platform, API, and microservice with open API, developer-first approach, loyalty gamification, digital loyalty solutions, and composable architecture',
         'brand': {
           '@type': 'Brand',
           'name': 'GameLayer'

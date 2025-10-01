@@ -52,7 +52,7 @@ export default function ApiStructuredData() {
         'name': 'GameLayer API',
         'applicationCategory': 'DeveloperApplication',
         'operatingSystem': 'All',
-        'description': 'AI-ready gamification API with RESTful endpoints, comprehensive documentation, and developer-first approach',
+        'description': 'AI-ready gamification API, microservice, and API for gamification with RESTful endpoints, comprehensive documentation, and developer-first approach',
         'featureList': [
           'RESTful API endpoints',
           'Comprehensive documentation',

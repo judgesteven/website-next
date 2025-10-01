@@ -3,12 +3,12 @@ import { ApiPage } from '@/components/ApiPage'
 import ApiStructuredData from '@/components/ApiStructuredData'
 
 export const metadata: Metadata = {
-  title: 'GameLayer API Documentation - AI-Ready Gamification API Reference & Integration Guide',
-  description: 'Complete GameLayer API documentation with RESTful endpoints, SDKs, and integration examples. AI-ready gamification API with structured data, webhooks, and developer-first approach. Open API with comprehensive documentation.',
-  keywords: 'gamification API, gamification API documentation, gamification API reference, gamification integration, gamification SDK, gamification webhook, gamification REST API, gamification API guide, gamification developer tools, gamification API examples',
+  title: 'GameLayer API Documentation - AI-Ready Gamification API, Microservice & Integration Guide',
+  description: 'Complete GameLayer API documentation with RESTful endpoints, SDKs, and integration examples. AI-ready gamification API, microservice, and API for gamification with structured data, webhooks, and developer-first approach. Open API with comprehensive documentation.',
+  keywords: 'gamification API, gamification API documentation, gamification API reference, gamification integration, gamification SDK, gamification webhook, gamification REST API, gamification API guide, gamification developer tools, gamification API examples, API for gamification, gamification microservice',
   openGraph: {
-    title: 'GameLayer API Documentation - AI-Ready Gamification API',
-    description: 'Complete reference for GameLayer gamification API integration. RESTful endpoints, SDKs, webhooks, and structured data for AI-ready gamification.',
+    title: 'GameLayer API Documentation - AI-Ready Gamification API & Microservice',
+    description: 'Complete reference for GameLayer gamification API, microservice, and API for gamification integration. RESTful endpoints, SDKs, webhooks, and structured data for AI-ready gamification.',
     images: [
       {
         url: 'https://gamelayer.io/gamelayer-logo.png',
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'GameLayer API Documentation - AI-Ready Gamification API',
-    description: 'Complete reference for GameLayer gamification API integration. RESTful endpoints, SDKs, and structured data.',
+    title: 'GameLayer API Documentation - AI-Ready Gamification API & Microservice',
+    description: 'Complete reference for GameLayer gamification API, microservice, and API for gamification integration. RESTful endpoints, SDKs, and structured data.',
     images: ['https://gamelayer.io/gamelayer-logo.png'],
   },
   alternates: {

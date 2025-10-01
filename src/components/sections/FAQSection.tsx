@@ -6,7 +6,7 @@ import { CheckCircle } from 'lucide-react'
 const faqs = [
   {
     question: "What is gamification and how does it work?",
-    answer: "Gamification is the application of game mechanics to non-game contexts to increase user engagement, motivation, and participation. It works by using elements like points, badges, leaderboards, and rewards that create a sense of achievement and progress. Our gamification platform makes it easy to implement these mechanics through our API and dashboard."
+    answer: "Gamification is the application of game mechanics to non-game contexts to increase user engagement, motivation, and participation. It works by using elements like points, badges, leaderboards, and rewards that create a sense of achievement and progress. Our gamification platform, API, and microservice make it easy to implement these mechanics, including loyalty gamification and digital loyalty programs, through our API and dashboard."
   },
   {
     question: "How much does GameLayer cost?",
@@ -26,11 +26,11 @@ const faqs = [
   },
   {
     question: "How does gamification improve customer retention?",
-    answer: "Gamification improves customer retention by 25-40% through loyalty programs, consistent engagement, habit formation, and emotional connection. Features like streaks, daily goals, and mystery boxes keep users coming back regularly. Our platform provides the tools to create these engaging experiences that drive long-term customer loyalty."
+    answer: "Gamification improves customer retention by 25-40% through loyalty programs, consistent engagement, habit formation, and emotional connection. Features like streaks, daily goals, and mystery boxes keep users coming back regularly. Our platform provides the tools to create these engaging experiences, including loyalty gamification and gamified loyalty experiences, that drive long-term customer loyalty and digital loyalty engagement."
   },
   {
     question: "What makes GameLayer developer-friendly for AI integration?",
-    answer: "GameLayer is designed with developers in mind, offering comprehensive API documentation, consistent data schemas, and machine-readable formats. Our RESTful APIs provide structured JSON responses that AI systems can easily parse and understand. The composable architecture allows developers to integrate specific gamification components into their AI-powered applications without unnecessary complexity."
+    answer: "GameLayer is designed with developers in mind, offering comprehensive API documentation, consistent data schemas, and machine-readable formats. Our RESTful APIs provide structured JSON responses that AI systems can easily parse and understand. The composable architecture allows developers to integrate specific gamification components, including API for gamification and gamification microservice capabilities, into their AI-powered applications without unnecessary complexity."
   }
 ]
 

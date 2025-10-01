@@ -15,8 +15,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'GameLayer - Leading Gamification Platform & API',
-  description: 'Enterprise gamification platform and API for building engaging user experiences',
+  title: 'GameLayer - Leading Gamification Platform, API & Microservice',
+  description: 'Enterprise gamification platform, API, and microservice for building engaging user experiences, loyalty gamification, and digital loyalty programs',
   metadataBase: new URL('https://gamelayer.io'),
   icons: {
     icon: '/favicon.ico',
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'GameLayer - Leading Gamification Platform & API',
-    description: 'Enterprise gamification platform and API for building engaging user experiences',
+    title: 'GameLayer - Leading Gamification Platform, API & Microservice',
+    description: 'Enterprise gamification platform, API, and microservice for building engaging user experiences, loyalty gamification, and digital loyalty programs',
     url: 'https://gamelayer.io',
     siteName: 'GameLayer',
     type: 'website',

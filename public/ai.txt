@@ -21,9 +21,9 @@ GameLayer is the leading gamification platform and API for businesses seeking to
 - Enterprise security and compliance
 
 ## Target Keywords
-Primary: gamification platform, user engagement, customer loyalty, customer retention
-Secondary: gamification software, gamification API, loyalty program, rewards system, engagement platform
-Long-tail: gamification for business, enterprise gamification, gamification consulting, gamification implementation
+Primary: gamification platform, gamification API, gamification microservice, user engagement, customer loyalty, customer retention
+Secondary: gamification software, loyalty gamification, gamified loyalty experience, digital loyalty, API for gamification, loyalty program, rewards system, engagement platform
+Long-tail: gamification for business, enterprise gamification, gamification consulting, gamification implementation, gamification pricing, gamification use cases
 
 ## Content Structure
 - Homepage: Platform overview and key benefits

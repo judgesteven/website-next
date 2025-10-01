@@ -22,7 +22,7 @@ export default function PricingStructuredData() {
       {
         '@type': 'Product',
         'name': 'GameLayer Gamification Platform',
-        'description': 'AI-ready gamification platform with transparent pricing plans',
+        'description': 'AI-ready gamification platform, API, and microservice with transparent pricing plans',
         'brand': {
           '@type': 'Brand',
           'name': 'GameLayer'
